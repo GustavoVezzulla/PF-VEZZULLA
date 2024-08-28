@@ -1,10 +1,10 @@
 # Piramide 
-<h1 align="center">Hi 👋, I'm Pablo</h1>
+<h1 align="center">Hi 👋, I'm GUSTAVO</h1>
 <h3 align="center">About.Me</h3>
 
 - 🔭 I’m currently working on **Piramide**
 
-- 📫 How to reach me **pbajder@agea.com.ar**
+- 📫 How to reach me **gvezzulla@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
