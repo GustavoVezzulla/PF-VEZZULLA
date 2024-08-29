@@ -1,0 +1,1324 @@
+/*!-----RESET-----*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*!-----HEADER-----*/
+/*!-----mantener orden en css;-----*/
+
+/*!-----background-attachment: fixed; scroleo img----*/
+
+header {
+    height: 120px;
+    background-color: rgb(246, 180, 97);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a {
+    width: 70%;
+    text-decoration: none;
+}
+
+header a h1 {
+    text-decoration: none;
+    justify-content: center;
+    margin: 10px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 54px;
+    font-weight: 900;
+}
+
+header nav{
+    width: 30%;
+}
+
+
+header nav ul {
+    margin: 10px;
+    list-style: none;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+     
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;    
+}
+
+header nav ul li a:hover{
+    color: gold;
+}
+
+.hero {
+    padding: 10px;
+    width: 100%;
+    height: calc(100vh - 180px);
+    background-image: url("../img/camellov2.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    margin: 10px;
+    width: 90%;
+    color: chocolate;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 82px;
+    font-weight: 1200;
+}
+
+.hero h2:hover{
+    color: #fff;
+}
+
+.ranking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ranking div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.ranking div a {
+    text-decoration: none;
+
+}
+
+.ranking div h2 {
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    color: chocolate;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.ranking div p {
+    margin: 10px;
+
+}
+
+.ranking a img {
+    height: 400px;
+}
+
+/*!-----GENEROS-----*/
+
+.generos {
+    margin: 10px;
+    display: grid;
+    grid-template-rows: (200px 200px);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.generos a {
+    text-decoration: none;
+}
+
+.generos h3 {
+    margin: 10px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.generos p {
+    margin: 10px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    background-color: yellow;
+}
+
+
+
+.novedades h2 {
+    margin-bottom: 10px;
+    color: white;
+    background-color: goldenrod;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.listaNovedades {
+    width: 100%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+    gap: 10px;
+}
+
+.listaNovedades img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*!-----FOOTER-----*/
+
+footer {
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid;
+}
+
+footer h4 {
+    margin: 10px;
+    width: 30%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+footer div a img {
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/*!-----Catalogo.html-----*/
+
+.grillaContenedor {
+    width: 100%;
+    height: calc(100vh -300px);
+    margin: 50px auto;
+    padding: 5px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 3(0.5fr 1.25fr 1.25fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "rankingAside rankingMes rankingMes"
+        "rankingAside rankingAnual rankingAnual"
+    ;
+    gap: 40px;
+
+}
+
+.rankingMes {
+    grid-area: rankingMes;  
+}
+
+.rankingAnual {
+    grid-area: rankingAnual;
+}
+
+.rankingAside {
+    grid-area: rankingAside;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+    grid-gap: 10px;stroke-linecap: ;
+    background-color: #fff;
+    color: #444;
+
+}
+
+.rankingAside h3 {
+    color: rgb(246, 180, 97);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 34px;
+    font-weight: 500;
+    margin: 10px;
+    text-align: justify;
+}
+
+.asideGeneros ul {
+    list-style: none;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(246, 180, 97);
+
+}
+
+.rankingAside ul li {
+    margin: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.rankingAside ul li a {
+    text-decoration: none; 
+}
+
+.box {
+    background-image: url("../img/black.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 90%;
+    color: #fff;
+}
+
+.asideConsulta {
+    margin: 10px;
+    width: 80%;
+}
+
+
+/*---ranking.html----*/
+
+main{
+    margin: 10px;
+}
+main h2{
+    color: rgb(246, 180, 97);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 34px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+
+
+/*---locales.html----*/
+
+.mapasLocales {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.casaCentral {
+    display: flex;
+    justify-content: center;
+}
+
+.logoChaca {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logoChaca h3 {
+    color: rgb(246, 180, 97);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.fotoChaca {
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/cafelib.jpg");
+    background-size: cover;
+
+}
+
+.fotoChaca p {
+    margin: 10px;
+    padding: 5px;
+    border: solid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400px;
+    color: white;
+    background-color: rgb(246, 180, 97);
+    display: flex;
+
+
+}
+
+.sucursales {
+    color: chocolate;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid;
+    border-color: chocolate;
+}
+
+/*---contactos.html----*/
+
+.formularioNews h3 {
+    margin: 20px 10px 20px 10px;
+    color: rgb(246, 180, 97);
+    font-size: 36px;
+    font-weight: 600;
+
+}
+
+.formularioNews p {
+    width: 70%;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    background-color: rgb(246, 180, 97);
+    font-size: 20px;
+    font-weight: 300;
+    border: solid;
+    text-align: justify;
+}
+
+.fomularioDatos {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:1070px) {
+
+    header {
+        width: 100%;
+        height: 110px;
+        background-color: rgb(246, 180, 97);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header div a {
+        text-decoration: none;
+    }
+
+    header a h1 {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 44px;
+        font-weight: 700;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header nav ul {
+        list-style: none;
+        display: flex;
+        text-align: center;
+
+    }
+
+    header nav ul li {
+        margin: 5px;
+
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+
+
+
+    .hero {
+        margin: 5px 5px 5px 0px;
+        width: 100%;
+        height: 250px;
+        background-image: url("../img/camellov2.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        text-align: center;
+    }
+
+    .hero h2 {
+        margin: 10px;
+        width: 90%;
+        height: auto;
+        color: chocolate;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .ranking {
+        margin: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .ranking div a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex: wrap;
+    }
+
+
+    .ranking div h2 {
+        margin: 10px;
+        padding: 0px;
+        color: chocolate;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 38px;
+        font-weight: 500;
+    }
+
+    .ranking div a {
+        text-decoration: none;
+    }
+
+    .ranking div p {
+        text-align: justify;
+        padding: 5px;
+    }
+
+    .ranking img {
+        width: 90%;
+    }
+
+    .generos {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .generos a {
+        text-decoration: none;
+    }
+
+    .generos h3 {
+        margin: 10px;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .generos p {
+        margin: 10px;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        background-color: yellow;
+    }
+
+    /*!---.novedades {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    ----*/
+    .novedades h2 {
+        width: 100%;
+        margin-bottom: 10px;
+        color: white;
+        background-color: goldenrod;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 28px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+
+    .listaNovedades {
+        width: 100%;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+        gap: 10px;
+    }
+
+    .listaNovedades img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .wrapper {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        margin: 5px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid;
+    }
+
+    footer h4 {
+        display: none;
+    }
+
+    footer div a img {
+        margin: 5px;
+        width: 25px;
+        height: 25px;
+    }
+
+    footer a {
+        text-decoration: none;
+    }
+
+    /*!-----Catalogo.html-----*/
+    .cataGrilla {
+        margin: 30px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cataLibros {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 180px;
+        grid-gap: 10px;
+        color: #444;
+    }
+    
+    .box {
+        background-image: url("../img/black.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 90%;
+        color: #fff;
+    }
+
+    /*!-----Ranking.html-----*/
+    .grillaContenedor {
+        width: 90%;
+        height: calc(100vh -300px);
+        margin: 10px auto;
+        padding: 5px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        display: grid;
+        grid-template-columns: 200px 700px;
+        grid-template-rows: repeat(auto, auto);
+        grid-template-areas:
+            "rankingAside rankingMes"
+            "rankingAside rankingAnual"
+        ;
+        gap: 30px;
+
+    }
+
+    .rankingMes {
+        grid-area: rankingMes;
+        margin-top: 30px;
+        width: 90%;
+        height: 50%;
+
+    }
+
+    .rankingAnual {
+        grid-area: rankingAnual;
+        margin-top: 60px;
+        width: 90%;
+        height: 50%;
+
+
+    }
+
+    .rankingAside {
+        grid-area: rankingAside;
+        margin: 10px;
+
+    }
+
+    .rankingAside h3 {
+        color: rgb(246, 180, 97);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        margin: 10px;
+    }
+
+    .rankingAside ul {
+        list-style: none;
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: rgb(246, 180, 97);
+
+    }
+
+    .rankingAside ul li {
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        margin: 10px;
+
+    }
+
+    .rankingAside ul li a {
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        margin: 10px;
+        text-decoration: none;
+        color: white;
+    }
+
+/*---locales.html----*/
+
+    .mapasLocales {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .casaCentral {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logoChaca {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logoChaca h3 {
+        color: rgb(246, 180, 97);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 28px;
+        font-weight: 300;
+        margin-bottom: 15px;
+        text-align: center;
+
+    }
+
+    .fotoChaca {
+        margin: 10px;
+        padding: 10px;
+        width: 90%;
+        height: 380px;
+        background-image: url("../img/cafelib.jpg");
+        background-size: cover;
+
+    }
+
+    .fotoChaca p {
+        margin: 10px;
+        padding: 5px;
+        border: solid;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 14px;
+        color: white;
+        background-color: rgb(246, 180, 97);
+        display: flex;
+    }
+
+    .sucursales {
+        margin: 5px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border: solid;
+        border-color: chocolate;
+    }
+}    
+
+@media screen and (max-width:720px) {
+
+    header {
+        height: 90px;
+        background-color: rgb(246, 180, 97);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header a {
+        text-decoration: none;
+    }
+
+    header a h1 {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 1500;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header nav ul {
+        list-style: none;
+        display: flex;
+        text-align: center;
+
+    }
+
+    header nav ul li {
+        margin: 5px;
+
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+
+    }
+
+    .hero {
+        margin: 5px 5px 5px 0px;
+        width: 100%;
+        height: 160px;
+        background-image: url("../img/camellov2.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        text-align: center;
+    }
+
+    .hero h2 {
+        margin: 10px;
+        width: 90%;
+        height: auto;
+        color: chocolate;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 34px;
+        font-weight: 600;
+    }
+
+    .hero p {
+        display: none;
+    }
+
+    .ranking {
+        margin: 10px 0px 10px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .ranking div h2 {
+        margin: 10px;
+        color: chocolate;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .ranking div a {
+        text-decoration: none;
+    }
+
+    .ranking div p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .ranking img {
+        display: none;
+    }
+
+    .generos {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .generos a {
+        text-decoration: none;
+    }
+
+    .generos h3 {
+        margin: 10px;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .generos p {
+        margin: 10px;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        background-color: yellow;
+    }
+
+
+    .novedades h2 {
+        width: 100%;
+        margin-bottom: 10px;
+        color: white;
+        background-color: goldenrod;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 28px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+
+    .listaNovedades {
+        width: 100%;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+        gap: 10px;
+    }
+
+    .listaNovedades img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .wrapper {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        width: 100%;
+        padding: 10px;
+        margin: 5px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid;
+    }
+
+    footer h4 {
+        display: none;
+    }
+
+    footer div a img {
+        margin: 5px;
+        width: 25px;
+        height: 25px;
+    }
+
+    footer a {
+        text-decoration: none;
+    }
+
+/*!-----Catalogo.html-----*/
+    .cataGrilla {
+        margin: 50px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cataLibros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 150px;
+        grid-gap: 10px;
+        color: #444;
+    }
+    
+    .box {
+        background-image: url("../img/black.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 90%;
+        color: #fff;
+    }    
+
+/*---contactos.html----*/
+
+    .formularioNews h3 {
+        margin: 20px 10px 20px 10px;
+        color: rgb(246, 180, 97);
+        font-size: 30px;
+        font-weight: 500;
+
+    }
+
+    .formularioNews p {
+        width: 80%;
+        margin: 5px;
+        padding: 5px;
+        color: white;
+        background-color: rgb(246, 180, 97);
+        font-size: 18px;
+        font-weight: 300;
+        border: solid;
+        text-align: justify;
+    }
+
+    .fomularioDatos {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    /*---locales.html----*/
+
+    .mapasLocales {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .casaCentral {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logoChaca {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logoChaca h3 {
+        color: rgb(246, 180, 97);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 28px;
+        font-weight: 300;
+        margin-bottom: 15px;
+        text-align: center;
+
+    }
+
+    .fotoChaca {
+        margin: 10px;
+        padding: 10px;
+        width: 100%;
+        height: 400px;
+        background-image: url("../img/cafelib.jpg");
+        background-size: cover;
+        
+
+    }
+
+    .fotoChaca p {
+        margin: 10px;
+        padding: 5px;
+        border: solid;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 14px;
+        color: white;
+        background-color: rgb(246, 180, 97);
+    }
+
+    .sucursales {
+        margin-top: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border: solid;
+        border-color: chocolate;
+    }
+
+}    
+
+
+@media screen and (max-width:600px) {
+
+    header {
+        width: 100%;
+        height: 190px;
+        background-color: rgb(246, 180, 97);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header a {
+        text-decoration: none;
+    }
+
+    header a h1 {
+        text-decoration: none;
+        margin: 10px;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    header nav ul {
+        padding: 0px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 5px;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+
+    .hero {
+        width: 100%;
+        height: 200px;
+        background-image: url("../img/camellov2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+    }
+
+    .hero h2 {
+        width: 90%;
+        height: auto;
+        color: chocolate;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 34px;
+        font-weight: 600;
+    }
+
+    .novedades h2 {
+        width: 100%;
+        margin-bottom: 10px;
+        color: white;
+        background-color: goldenrod;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+
+    .listaNovedades {
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .listaNovedades img {
+        padding: 10px;
+        width: 70%;
+        height: auto;
+        object-fit: fill;
+    }
+
+    .pie {
+        width: 90%;
+    }
+
+    /*!-----Catalogo.html-----*/
+    .cataGrilla {
+        width: 70%;
+                     
+    }
+    
+    .cataLibros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    
+    .box {
+        background-image: url("../img/black.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 5px;
+        font-size: 90%;
+        color: #fff;
+    }    
+    /*---contactos.html----*/
+
+    .formularioNews {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formularioNews h3 {
+        margin: 20px 10px 20px 10px;
+        color: rgb(246, 180, 97);
+        font-size: 30px;
+        font-weight: 400;
+
+    }
+
+    .formularioNews p {
+        width: 80%;
+        margin: 5px;
+        padding: 5px;
+        color: white;
+        background-color: rgb(246, 180, 97);
+        font-size: 16px;
+        font-weight: 30;
+        border: solid;
+        text-align: justify;
+    }
+
+    .fomularioDatos {
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+    .mapasLocales {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .casaCentral {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logoChaca {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logoChaca div h3 {
+        color: rgb(246, 180, 97);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 28px;
+        font-weight: 300;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .logoChaca iframe {
+        width: 290px;
+        height: auto;
+        border: solid;
+    }
+
+    .fotoChaca {
+        margin: 10px;
+        padding: 10px;
+        width: 100%;
+        height: 400px;
+        background-image: url("../img/cafelib.jpg");
+        background-size: cover;
+        
+
+    }
+
+    .fotoChaca p {
+        margin: 10px;
+        padding: 5px;
+        border: solid;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 14px;
+        color: white;
+        background-color: rgb(246, 180, 97);
+    }
+
+    .sucursales {
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border: solid;
+        border-color: chocolate;
+    }
+    .sucursales iframe {
+        width: 280px;
+        height: auto;
+    }
+}
